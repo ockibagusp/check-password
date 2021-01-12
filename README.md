@@ -48,7 +48,7 @@ Linux: Python 3.7.9
 $ python -m unittest -v main_test utils_test
 ```
 
-Der Schlaganfall. Coding lupa, Apr 8 2020, 9 bulan. Tahap-tahap.
+Der Schlaganfall. Coding lupa, Apr 8 2020, 9 bulan. Bertahap-bertahap.
 
 ---
 
