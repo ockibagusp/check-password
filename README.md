@@ -1,5 +1,8 @@
 # Cek-Password
 
+Python 2.7 out of support (01 Jan 2020).
+Minimum: Python 3.x
+
 @secgron, ini password hacker.
 
 - [x] md5
@@ -20,7 +23,7 @@ Cek
 
 ## \$ python main.py
 
-Linux: Fedora 31 Workstation
+Linux: Fedora 34 Workstation
 
 ```
 Cak Password
@@ -42,7 +45,7 @@ md5 -> c93ccd78b2076528346216b3b2f701e6
 
 ## Tests
 
-Linux: Python 3.7.9
+Linux: Python 3.9.7
 
 ```
 $ python -m unittest -v main_test utils_test

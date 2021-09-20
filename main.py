@@ -5,7 +5,6 @@
 Ocki Bagus Pratama © 2020
 """
 
-from six import moves
 from utils import CekPassword
 
 if __name__ == "__main__":
@@ -16,9 +15,9 @@ if __name__ == "__main__":
 
     while ops:
         try:
-            ops = int(moves.input("Nomer (1, 2,..0): "))
+            ops = int(input("Nomer (1, 2,..0): "))
             if ops != 0 and ops <= 6:
-                pas = moves.input("Password: ")
+                pas = input("Password: ")
             elif ops != 0:
                 print("Salah!\n")
                 continue

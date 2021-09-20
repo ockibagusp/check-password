@@ -17,59 +17,40 @@ class CekPassword:
     # (?)
     def md5(self):
         _md5 = hashlib.md5()
-        if self.python_version == "2.7":
-            _md5.update(self.hasher)
-            return _md5.hexdigest()
         _md5.update(self.hasher.encode())
         return _md5.hexdigest()
 
     # (?)
     def sha1(self):
         _sha1 = hashlib.sha1()
-        if self.python_version == "2.7":
-            _sha1.update(self.hasher)
-            return _sha1.hexdigest()
         _sha1.update(self.hasher.encode())
         return _sha1.hexdigest()
 
     # (?)
     def sha224(self):
         _sha224 = hashlib.sha224()
-        if self.python_version == "2.7":
-            _sha224.update(self.hasher)
-            return _sha224.hexdigest()
         _sha224.update(self.hasher.encode())
         return _sha224.hexdigest()
 
     # (?)
     def sha256(self):
         _sha256 = hashlib.sha256()
-        if self.python_version == "2.7":
-            _sha256.update(self.hasher)
-            return _sha256.hexdigest()
         _sha256.update(self.hasher.encode())
         return _sha256.hexdigest()
 
     # (?)
     def sha384(self):
         _sha384 = hashlib.sha384()
-        if self.python_version == "2.7":
-            _sha384.update(self.hasher)
-            return _sha384.hexdigest()
         _sha384.update(self.hasher.encode())
         return _sha384.hexdigest()
 
     # (?)
     def sha512(self):
         _sha512 = hashlib.sha512()
-        if self.python_version == "2.7":
-            _sha512.update(self.hasher)
-            return _sha512.hexdigest()
         _sha512.update(self.hasher.encode())
         return _sha512.hexdigest()
 
     # (?) Python version 3.6: blake2b() and blake2s()
-
     def blake2b(self):
         pass
 
@@ -80,17 +61,16 @@ class CekPassword:
     # cek Python
     def cekPython(self):
         # Python 3.x
-        self.python_version = "3"
+        if version_info.major == "3":
+            if version_info.minor >= 6:
+                self.python_version = ">=3.6"
         # Python 2.x
-        # if version_info >= (3,):
-        #   pass
-        if version_info.major == 2:
+        elif version_info.major == 2:
+            self.python_version = "2"
             if version_info.minor >= 7:
-                # Python 2.7.x
-                self.python_version = "2.7"
-            else:   # Python 2.6 and earlier exception handling
-                self.python_version = "2"
-                assert version_info.minor >= 2, "Please use Python 2.7 or later, not {}.{}.".format(
+                # Python 2.7.x or Python 2.6 and earlier exception handling
+                self.python_version = ">=2.7"
+            assert version_info.minor >= 2, "Please use Python 3.x or later, not {}.{}.".format(
                     version_info.major, version_info.minor)
         return False
 
