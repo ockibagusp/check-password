@@ -17,30 +17,33 @@ Minimum: Python 3.x
 Cek
 
 - [x] Lowercase (a-z)
+- [x] Uppercase (A-Z)
 - [x] Numbers (0-9)
-- [ ] Uppercase (A-Z)
-- [ ] Symbols (! "# \$% & '() \* +, -. / :; <=>? @ [\] ^ \_` {|} ~)
+- [x] Symbols (!#$%?@^)
 
 ## \$ python main.py
 
 Linux: Fedora 34 Workstation
 
 ```
-Cak Password
-==================
-1. md5
-2. sha1
-3. sha224
-4. sha256
-5. sha384
-6. sha512
+Cak Password==================
+1. random password generator
+2. md5
+3. sha1
+4. sha224
+5. sha256
+6. sha384
+7. sha512
 0. y/n
 
 Nomer (1, 2,..0): 1
+Password: 
+random password generator -> %nln@rF3NZAz@B2p
+Nomer (1, 2,..0): 2
 Password: admin1234
 md5 -> c93ccd78b2076528346216b3b2f701e6
-    -> c93ccd78b2076528346216b|3b2f701e6| # 10 digest
-    -> 3b2f701e6 # 10 digest
+md5 -> b3b2f701e6
+# 10 digest
 ```
 
 ## Tests

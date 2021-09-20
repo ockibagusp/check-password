@@ -5,6 +5,8 @@
 Ocki Bagus Pratama © 2020
 """
 
+import string
+import random
 import hashlib
 from sys import version_info
 
@@ -13,6 +15,12 @@ class CekPassword:
     def __init__(self, hasher=False):
         self.cekPython()
         self.hasher = hasher
+
+    # random password generator
+    def randomPasswordGenerator(self):
+        chars = string.ascii_uppercase + string.ascii_lowercase \
+            + string.digits + '!#$%?@^' # string.punctuation
+        return ''.join(random.choice(chars) for x in range(16))
 
     # (?)
     def md5(self):
@@ -61,17 +69,17 @@ class CekPassword:
     # cek Python
     def cekPython(self):
         # Python 3.x
-        if version_info.major == "3":
+        if version_info.major == 3:
             if version_info.minor >= 6:
                 self.python_version = ">=3.6"
         # Python 2.x
         elif version_info.major == 2:
-            self.python_version = "2"
+            self.python_version = "2.x"
             if version_info.minor >= 7:
                 # Python 2.7.x or Python 2.6 and earlier exception handling
                 self.python_version = ">=2.7"
-            assert version_info.minor >= 2, "Please use Python 3.x or later, not {}.{}.".format(
-                    version_info.major, version_info.minor)
+            raise Exception("Please use Python 3.x or later, not {}.{}."\
+                .format(version_info.major, version_info.minor))
         return False
 
     # print info start
@@ -80,12 +88,13 @@ class CekPassword:
         print(
             "Cak Password\n"
             "==================\n"
-            "1. md5\n"
-            "2. sha1\n"
-            "3. sha224\n"
-            "4. sha256\n"
-            "5. sha384\n"
-            "6. sha512\n"
+            "1. random password generator\n"
+            "2. md5\n"
+            "3. sha1\n"
+            "4. sha224\n"
+            "5. sha256\n"
+            "6. sha384\n"
+            "7. sha512\n"
             "0. y/n\n"
         )
 
@@ -112,31 +121,34 @@ class CekPassword:
     # run
     def run(self, ops, hasher=False):
         if 1 == ops:
+            rpg = self.randomPasswordGenerator()
+            return rpg, "random password generator"
+        if 2 == ops:
             md5 = self.md5()
             if hasher:
                 return md5, self.hex(md5), "md5"
             return md5, self.hex(md5)
-        elif 2 == ops:
+        elif 3 == ops:
             sha1 = self.sha1()
             if hasher:
                 return sha1, self.hex(sha1), "sha1"
             return sha1, self.hex(sha1)
-        elif 3 == ops:
+        elif 4 == ops:
             sha224 = self.sha224()
             if hasher:
                 return sha224, self.hex(sha224), "sha224"
             return sha224, self.hex(sha224)
-        elif 4 == ops:
+        elif 5 == ops:
             sha256 = self.sha256()
             if hasher:
                 return sha256, self.hex(sha256), "sha256"
             return self.sha256(), self.hex(sha256)
-        elif 5 == ops:
+        elif 6 == ops:
             sha384 = self.sha384()
             if hasher:
                 return sha384, self.hex(sha384()), "sha384"
             return sha384, self.hex(sha384)
-        elif 6 == ops:
+        elif 7 == ops:
             sha512 = self.sha512()
             if hasher:
                 return sha512, self.hex(sha512), "sha512"
