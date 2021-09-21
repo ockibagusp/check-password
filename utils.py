@@ -13,7 +13,7 @@ from sys import version_info
 
 class CheckPassword:
     def __init__(self, hasher=False):
-        self.cekPython()
+        self.checkPython()
         self.hasher = hasher
 
     # random password generator
@@ -66,8 +66,8 @@ class CheckPassword:
     def blake2s(self):
         pass
 
-    # cek Python
-    def cekPython(self):
+    # check Python
+    def checkPython(self):
         # Python 3.x
         if version_info.major == 3:
             if version_info.minor >= 6:
