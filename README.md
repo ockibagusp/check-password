@@ -1,10 +1,22 @@
 # Cek-Password
 
 Python 2.7 out of support (01 Jan 2020).
-Minimum: Python 3.x
 
-@secgron, ini password hacker.
+Minimum: Python 3.x.
 
+@secgron ini password hacker di Random Password Generator dan Hasher itu susah.
+
+## Random Password Generator
+
+### Pros
+
+- [x] Lowercase (a-z)
+- [x] Uppercase (A-Z)
+- [x] Numbers (0-9)
+- [x] Symbols (&excl;&num;&dollar;&percnt;&quest;&commat;&Hat;)
+
+
+## Hasher
 - [x] md5
 - [x] sha1
 - [x] sha224
@@ -14,19 +26,21 @@ Minimum: Python 3.x
 - [ ] blake2b # Python 3.6
 - [ ] blake2s # Python 3.6
 
-Cek
+### Pros
 
 - [x] Lowercase (a-z)
-- [x] Uppercase (A-Z)
+- [ ] Uppercase (A-Z)
 - [x] Numbers (0-9)
-- [x] Symbols (!#$%?@^)
+- [ ] Symbols (&excl;&quot;&num;&dollar;&percnt;&amp;&apos;&lpar;&rpar;&ast;&plus;&comma;&lowbar; ...)
+
 
 ## \$ python main.py
 
 Linux: Fedora 34 Workstation
 
 ```
-Cak Password==================
+Cak Password
+==================
 1. random password generator
 2. md5
 3. sha1
@@ -54,7 +68,7 @@ Linux: Python 3.9.7
 $ python -m unittest -v main_test utils_test
 ```
 
-Der Schlaganfall. Coding lupa, Apr 8 2020, 9 bulan. Bertahap-bertahap.
+Der Schlaganfall 03.10.2018-heute. Dirilis 8 April 2020. Coding ini agak pelupa. Bertahap.
 
 ---
 

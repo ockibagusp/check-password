@@ -17,10 +17,10 @@ class CekPassword:
         self.hasher = hasher
 
     # random password generator
-    def randomPasswordGenerator(self):
+    def randomPasswordGenerator(self, generator=16):
         chars = string.ascii_uppercase + string.ascii_lowercase \
             + string.digits + '!#$%?@^' # string.punctuation
-        return ''.join(random.choice(chars) for x in range(16))
+        return ''.join(random.choice(chars) for x in range(generator))
 
     # (?)
     def md5(self):
