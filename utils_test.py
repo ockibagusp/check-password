@@ -6,7 +6,7 @@ Ocki Bagus Pratama © 2021
 """
 
 import unittest
-from utils import CekPassword
+from utils import CheckPassword
 
 
 class TestTranslator(unittest.TestCase):
@@ -52,7 +52,7 @@ class TestTranslator(unittest.TestCase):
             ("Test8|asfff", "|Wrong!")
         ]
 
-        pas = CekPassword()
+        pas = CheckPassword()
         for (k, v) in listTest:
             testcase = str.split(k, "|")
             inout = str.split(v, "|")
@@ -89,7 +89,7 @@ class TestTranslator(unittest.TestCase):
             ("Test6|sha512", "12ae4fff4a0d152b26acf43872519220d2f32d61c9133616f4f2a2310556bbe4739eb558f3db36242208dcc62bef00b2c31b655f469b51c5775533a36f58be5e|a36f58be5e"),
         ]
 
-        pas = CekPassword()
+        pas = CheckPassword()
         for (k, v) in listTest:
             testcase = str.split(k, "|")
             inout = str.split(v, "|")

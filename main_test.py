@@ -6,7 +6,7 @@ Ocki Bagus Pratama © 2021
 """
 
 import unittest
-from utils import CekPassword
+from utils import CheckPassword
 
 
 class TestMain(unittest.TestCase):
@@ -27,7 +27,7 @@ class TestMain(unittest.TestCase):
             ("Test9|asfff", "|Wrong!")
         ]
 
-        pas = CekPassword()
+        pas = CheckPassword()
         for (k, v) in listTest:
             testcase = str.split(k, "|")
             inout = str.split(v, "|")

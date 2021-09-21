@@ -11,7 +11,7 @@ import hashlib
 from sys import version_info
 
 
-class CekPassword:
+class CheckPassword:
     def __init__(self, hasher=False):
         self.cekPython()
         self.hasher = hasher
@@ -86,7 +86,7 @@ class CekPassword:
     @ staticmethod
     def print_info(web=False):
         print(
-            "Cak Password\n"
+            "Check Password\n"
             "==================\n"
             "1. random password generator\n"
             "2. md5\n"

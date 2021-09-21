@@ -5,10 +5,10 @@
 Ocki Bagus Pratama © 2020
 """
 
-from utils import CekPassword
+from utils import CheckPassword
 
 if __name__ == "__main__":
-    main = CekPassword()
+    main = CheckPassword()
     main.print_info()
 
     ops = 1  # randomPasswordGenerator()

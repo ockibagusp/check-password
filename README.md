@@ -1,4 +1,4 @@
-# Cek-Password
+# Check-Password
 
 Python 2.7 out of support (01 Jan 2020).
 
@@ -39,7 +39,7 @@ Minimum: Python 3.x.
 Linux: Fedora 34 Workstation
 
 ```
-Cak Password
+Check Password
 ==================
 1. random password generator
 2. md5
