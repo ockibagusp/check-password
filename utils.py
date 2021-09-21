@@ -68,16 +68,8 @@ class CheckPassword:
 
     # check Python
     def checkPython(self):
-        # Python 3.x
-        if version_info.major == 3:
-            if version_info.minor >= 6:
-                self.python_version = ">=3.6"
         # Python 2.x
-        elif version_info.major == 2:
-            self.python_version = "2.x"
-            if version_info.minor >= 7:
-                # Python 2.7.x or Python 2.6 and earlier exception handling
-                self.python_version = ">=2.7"
+        if version_info.major == 2:
             raise Exception("Please use Python 3.x or later, not {}.{}."\
                 .format(version_info.major, version_info.minor))
         return False
