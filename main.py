@@ -15,17 +15,17 @@ if __name__ == "__main__":
 
     while ops:
         try:
-            ops = int(input("Nomer (1, 2,..0): "))
+            ops = int(input("Number (1, 2,..0): "))
             if ops != 0 and ops <= 7:
                 if ops == 1:
                     print("Password: ")
                 else:
                     pas = input("Password: ")
             elif ops != 0:
-                print("Salah!\n")
+                print("Wrong!\n")
                 continue
         except ValueError:
-            print("Salah!\n")
+            print("Wrong!\n")
             continue
 
         if ops == 0:

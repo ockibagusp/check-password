@@ -34,7 +34,7 @@ class TestTranslator(unittest.TestCase):
                 out = "zQKPzcVuQu#3esuSYtCzrG40"
             elif testcase == "Test4":
                 out = "Max. 128 character"
-                
+
             self.assertEqual(inout[1], out) # ?
 
     def test_hasher(self):
@@ -49,7 +49,7 @@ class TestTranslator(unittest.TestCase):
             ("Test6|sha512", "ThisIsTest6|12ae4fff4a0d152b26acf43872519220d2f32d61c9133616f4f2a2310556bbe4739eb558f3db36242208dcc62bef00b2c31b655f469b51c5775533a36f58be5e"),
             # incorrect
             ("Test7|y/n", "|Ocki Bagus Pratama © 2020"),
-            ("Test8|asfff", "|Salah!")
+            ("Test8|asfff", "|Wrong!")
         ]
 
         pas = CekPassword()
@@ -73,7 +73,7 @@ class TestTranslator(unittest.TestCase):
             elif testcase[1] == "y/n":
                 out = "Ocki Bagus Pratama © 2020"
             elif testcase[1] == "asfff":
-                out = "Salah!"
+                out = "Wrong!"
 
             self.assertEqual(inout[1], out)
 

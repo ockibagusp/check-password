@@ -156,4 +156,4 @@ class CekPassword:
         elif 0 == ops:
             return self.print_info_end()
         else:
-            return "Salah!\n"
+            return "Wrong!\n"

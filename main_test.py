@@ -24,7 +24,7 @@ class TestMain(unittest.TestCase):
             ("Test7|sha512", "ThisIsTest6|12ae4fff4a0d152b26acf43872519220d2f32d61c9133616f4f2a2310556bbe4739eb558f3db36242208dcc62bef00b2c31b655f469b51c5775533a36f58be5e"),
             # incorrect
             ("Test8|y/n", "|Ocki Bagus Pratama © 2020"),
-            ("Test9|asfff", "|Salah!")
+            ("Test9|asfff", "|Wrong!")
         ]
 
         pas = CekPassword()
@@ -50,7 +50,7 @@ class TestMain(unittest.TestCase):
             elif testcase[1] == "y/n":
                 out = "Ocki Bagus Pratama © 2020"
             elif testcase[1] == "asfff":
-                out = "Salah!"
+                out = "Wrong!"
 
             self.assertEqual(inout[1], out)
 
