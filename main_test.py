@@ -13,7 +13,7 @@ class TestMain(unittest.TestCase):
     def test_main(self):
         # Lists of normal case scenarios.
         listTest = [
-            # Case | (Transalator_function, Key Command)
+            # Case | (Main function, Key Command)
             ("Test1|rpg", 1),
             ("Test2|md5", 2),
             ("Test3|sha1", 3),

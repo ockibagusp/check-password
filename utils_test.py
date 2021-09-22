@@ -9,12 +9,12 @@ import unittest
 from utils import CheckPassword
 
 
-class TestTranslator(unittest.TestCase):
+class TestUtils(unittest.TestCase):
 
     def test_random_password(self):
         # Lists of normal case scenarios.
         listTest = [
-            # Case | (Transalator_function, Output auto: #16 character)
+            # Case | (Random Password function, Output auto: #16 character)
             ("Test1", "%nln@rF3NZAz@B2p"), # auto: 16 character
             ("Test2", "A2zmuJ%Cyy0VxjPb2L"), # auto: 18 character
             ("Test3", "zQKPzcVuQu#3esuSYtCzrG40"), # auto: 24 character
@@ -37,7 +37,7 @@ class TestTranslator(unittest.TestCase):
     def test_hasher(self):
         # Lists of normal case scenarios.
         listTest = [
-            # Case | (Transalator_function, Input|Output)
+            # Case | (Hasher function, Input|Output)
             ("Test1|md5",    "ThisIsTest1|1fb81916b94ae73ddd71ac6fcf5a6e01"),
             ("Test2|sha1",   "ThisIsTest2|55b3eeebf68f7a2895993d8a616b00654bf13217"),
             ("Test3|sha224", "ThisIsTest3|2856b277aee63cb9bc9a63ee66adf269c1efdfa5b7cd3b5f2fbb8afa"),
@@ -77,7 +77,7 @@ class TestTranslator(unittest.TestCase):
     def test_hex(self):
         # Lists of normal case scenarios.
         listTest = [
-            # Case | (Transalator_function, Input|Output #10 digest)
+            # Case | (Hex function, Input|Output #10 digest)
             ("Test1|md5",    "1fb81916b94ae73ddd71ac6fcf5a6e01|6fcf5a6e01"),
             ("Test2|sha1",   "55b3eeebf68f7a2895993d8a616b00654bf13217|654bf13217"),
             ("Test3|sha224", "2856b277aee63cb9bc9a63ee66adf269c1efdfa5b7cd3b5f2fbb8afa|5f2fbb8afa"),
