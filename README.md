@@ -4,7 +4,7 @@ Python 2.7 out of support (01 Jan 2020).
 
 Minimum: Python 3.x.
 
-@secgron ini password hacker di Random Password Generator dan Hasher itu susah.
+@secgron ini password hacker di Random Password Generator dan Hasher itu susah bangat atau nol.
 
 ## Random Password Generator
 
