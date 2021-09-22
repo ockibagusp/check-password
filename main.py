@@ -8,13 +8,19 @@ Ocki Bagus Pratama © 2020
 from utils import CheckPassword
 
 """
+Correct
 1. random password generator:   randomPasswordGenerator()
 2. md5:                         md5()
 3. sha1:                        sha1()
 4. sha224:                      sha224()
 5. sha256:                      sha256()
 6. sha384:                      sha384()
-7. sha512:                      sha512() 
+7. sha512:                      sha512()
+0. no                           print_info_end()
+
+Incorrect
+wrong: -1, 100, and others
+wrong: 'asfff' and others
 """
 
 if __name__ == "__main__":

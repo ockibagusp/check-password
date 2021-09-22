@@ -22,47 +22,46 @@ class CheckPassword:
             + string.digits + '!#$%?@^' # string.punctuation
         return ''.join(random.choice(chars) for x in range(generator))
 
-    # (?)
+    # md5
     def md5(self):
         _md5 = hashlib.md5()
         _md5.update(self.hasher.encode())
         return _md5.hexdigest()
 
-    # (?)
+    # sha1
     def sha1(self):
         _sha1 = hashlib.sha1()
         _sha1.update(self.hasher.encode())
         return _sha1.hexdigest()
 
-    # (?)
+    # sha224
     def sha224(self):
         _sha224 = hashlib.sha224()
         _sha224.update(self.hasher.encode())
         return _sha224.hexdigest()
 
-    # (?)
+    # sha256
     def sha256(self):
         _sha256 = hashlib.sha256()
         _sha256.update(self.hasher.encode())
         return _sha256.hexdigest()
 
-    # (?)
+    # sha384
     def sha384(self):
         _sha384 = hashlib.sha384()
         _sha384.update(self.hasher.encode())
         return _sha384.hexdigest()
 
-    # (?)
+    # sha512
     def sha512(self):
         _sha512 = hashlib.sha512()
         _sha512.update(self.hasher.encode())
         return _sha512.hexdigest()
 
-    # (?) Python version 3.6: blake2b() and blake2s()
+    # Python version 3.6: blake2b() and blake2s()
     def blake2b(self):
         pass
 
-    # (?)
     def blake2s(self):
         pass
 
@@ -87,10 +86,10 @@ class CheckPassword:
             "5. sha256\n"
             "6. sha384\n"
             "7. sha512\n"
-            "0. y/n\n"
+            "0. no\n"
         )
 
-    # action (?)
+    # action
     def action(self, hasher):
         self.hasher = hasher
 
@@ -102,7 +101,8 @@ class CheckPassword:
             "Ocki Bagus Pratama © 2020"
         )
 
-    # hex (?)
+    # hex
+    # ==============
     # md5: 1fb81916b94ae73ddd71ac6fcf5a6e01
     #   -> 1fb81916b94ae73ddd71ac6|fcf5a6e01| # 10 digest
     #   -> fcf5a6e01 # 10 digest
