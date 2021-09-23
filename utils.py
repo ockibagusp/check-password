@@ -86,7 +86,7 @@ class CheckPassword:
             "5. sha256\n"
             "6. sha384\n"
             "7. sha512\n"
-            "0. no\n"
+            "0. No\n"
         )
 
     # action

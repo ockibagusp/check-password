@@ -48,11 +48,11 @@ Check Password
 5. sha256
 6. sha384
 7. sha512
-0. y/n
+0. No
 
 Nomer (1, 2,..0): 1
-Password: 
 random password generator -> %nln@rF3NZAz@B2p
+
 Nomer (1, 2,..0): 2
 Password: admin1234
 md5 -> c93ccd78b2076528346216b3b2f701e6
