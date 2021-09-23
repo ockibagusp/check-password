@@ -21,7 +21,7 @@ class TestMain(unittest.TestCase):
             ("Test5|sha256", 5),
             ("Test6|sha384", 6),
             ("Test7|sha512", 7),
-            ("Test7|y/n", 0),
+            ("Test7|No", 0),
             # incorrect
             ("Test8|wrong", -1),
             ("Test9|wrong(2)", 100),
@@ -45,7 +45,7 @@ class TestMain(unittest.TestCase):
                 out = 6
             elif testcase[1] == "sha512":
                 out = 7
-            elif testcase[1] == "y/n":
+            elif testcase[1] == "No":
                 out = 0
             elif testcase[1] == "wrong":
                 out = -1
@@ -55,7 +55,3 @@ class TestMain(unittest.TestCase):
                 out = "asfff"
 
             self.assertEqual(inout, out)
-
-
-if __name__ == '__main__':
-    unittest.main()

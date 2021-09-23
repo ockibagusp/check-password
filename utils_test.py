@@ -108,7 +108,3 @@ class TestUtils(unittest.TestCase):
                 out = hex
 
             self.assertEqual(inout[1], out)
-
-
-if __name__ == '__main__':
-    unittest.main()
