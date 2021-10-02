@@ -6,7 +6,7 @@ Minimum: Python 3.x.
 
 @secgron ini password hacker di Random Password Generator dan Hasher itu susah bangat atau nol.
 
-## Random Password Generator
+## 1. Random Password Generator
 
 ### Pros
 
@@ -15,16 +15,17 @@ Minimum: Python 3.x.
 - [x] Numbers (0-9)
 - [x] Symbols (&excl;&num;&dollar;&percnt;&quest;&commat;&Hat;)
 
+## 2. Replace Password
 
-## Hasher
+## 3. Hasher
 - [x] md5
 - [x] sha1
 - [x] sha224
 - [x] sha256
 - [x] sha384
 - [x] sha512
-- [ ] blake2b # Python 3.6
-- [ ] blake2s # Python 3.6
+- [x] blake2b
+- [x] blake2s
 
 ### Pros
 
@@ -42,18 +43,25 @@ Linux: Fedora 34 Workstation
 Check Password
 ==================
 1. random password generator
-2. md5
-3. sha1
-4. sha224
-5. sha256
-6. sha384
-7. sha512
+2. replace password
+3. md5
+4. sha1
+5. sha224
+6. sha256
+7. sha384
+8. sha512
+9. blake2b #Python 3.6 or later
+10. blake2s #Python 3.6 or later
 0. No
 
 Nomer (1, 2,..0): 1
 random password generator -> %nln@rF3NZAz@B2p
 
 Nomer (1, 2,..0): 2
+Password: password
+replace password -> p@$$word
+
+Nomer (1, 2,..0): 3
 Password: admin1234
 md5 -> c93ccd78b2076528346216b3b2f701e6
 md5 -> b3b2f701e6
