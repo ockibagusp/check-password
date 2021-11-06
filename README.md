@@ -76,7 +76,7 @@ Linux: Python 3.9.7
 $ python -m unittest -v main_test utils_test
 ```
 
-Der Schlaganfall 03.10.2018-heute. Dirilis 8 April 2020. Coding ini agak pelupa. Bertahap.
+Der Schlaganfall 03.10.2018-heute. Dirilis 8 April 2020. Coding ini agak lupa. Bertahap.
 
 ---
 
